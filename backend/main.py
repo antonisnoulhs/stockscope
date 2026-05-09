@@ -22,7 +22,7 @@ def root():
 def get_stock_info(ticker: str):
     try:
         stock = yf.Ticker(ticker.upper())
-        info = stock.info
+        info = stock.fast_info
 
         # yfinance sometimes returns empty info for invalid tickers
         if not info or info.get("regularMarketPrice") is None and info.get("currentPrice") is None:
