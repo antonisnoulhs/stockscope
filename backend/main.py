@@ -1,7 +1,8 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 import requests
-
+import os
+API_KEY = os.environ.get("API_KEY", "520YNHN2QNMWIFZP")
 
 BASE = "https://www.alphavantage.co/query"
 
