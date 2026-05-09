@@ -4,7 +4,7 @@ import MetricsGrid from './components/MetricsGrid'
 import StockChart from './components/StockChart'
 import CompareChart from './components/CompareChart'
 
-const API = 'http://stockscope-eant.onrender.com'
+const API = 'https://stockscope-backend.onrender.com'
 
 export default function App() {
   const [tab, setTab] = useState('analyze')
